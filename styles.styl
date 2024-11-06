@@ -95,7 +95,7 @@ body
 
 // Header
 .header__logo
-  font-size 2.5rem
+  font-size clamp(2.2rem, 2.5vw + 1rem, 2.75rem)
   font-weight weight-bold
   line-height 1
   text-transform uppercase
@@ -113,13 +113,10 @@ body
   width 88.75%
 
 .page__title
-  font-size: calc(2.2rem + (4 - 2.2) * ((100vw - 320px) / (1440 - 320)));
+  font-size clamp(2.2rem, 5vw + 1rem, 4rem)
   font-weight weight-light
   color gray-color
-
   
-
-
   span
     font-weight weight-bold
     color dark-blue
@@ -135,7 +132,7 @@ body
   flex-direction column
   gap 1.25rem
   font-size 1.5rem
-  margin: 1.75rem 0 3.55rem
+  margin 1.75rem 0 3.55rem
 
 .form__input[type="email"]
   padding 1.6rem
@@ -166,9 +163,9 @@ body
 .page__footer
   display flex
   flex-direction column
-  gap: 3.25rem
+  gap 3.25rem
   color white
-  margin-bottom: 4.65rem
+  margin-bottom 4.65rem
 
 .social__list
   display flex
@@ -176,12 +173,12 @@ body
   gap 2rem
 
 .social__icon
-  display: flex
+  display flex
   justify-content: center
   width 3.75rem
   height 3.75rem
   border 0.1rem solid white
-  border-radius: 50%
+  border-radius 50%
 
 .social__icon svg
   width 1.7rem
