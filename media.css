@@ -1,3 +1,16 @@
-@media (min-width: 47rem) {
-    
+@media (min-width: 28rem) {
+    .page__form {
+        flex-direction: row;
+        width: 100%;
+        max-width: 43rem
+    }
+
+    .form__input[type="email"] {
+        flex: 3;
+    }
+
+    .form__button {
+        flex: 1;
+    }
 }
+
