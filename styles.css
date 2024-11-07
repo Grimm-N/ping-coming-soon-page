@@ -134,7 +134,7 @@ body {
   color: #fff;
   animation: animate__fadeInDown;
 }
-.page__title animation-delay:span {
+.page__title span {
   font-weight: 700;
   color: #151f29;
 }
