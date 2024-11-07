@@ -59,7 +59,7 @@ textarea:not([rows])
   font-style normal
 
 // VARIABLES
-red-color = hsl(354, 100%, 66%)
+red-color = hsl(58, 100%, 50%)
 gray-color = hsl(0, 0%, 59%)
 pale-blue = hsl(223, 100%, 88%)
 blue-color = hsl(223, 87%, 63%)
@@ -159,6 +159,7 @@ body
   max-width 35.5rem
   width 88.75%
   margin-bottom: calc(1em + 4.4vw)
+  position: relative;
 
 .form__input
   padding 1.15rem 1.5rem
@@ -168,7 +169,7 @@ body
   font-size clamp(0.8rem, 1.2vw, 1rem)
 
 .form__input::placeholder
-  color pale-blue
+  color gray-color
   font-weight weight-light
 
 .form__input:focus 
@@ -222,8 +223,8 @@ body
   padding 0.5rem 1.5rem
   justify-self flex-start
 
-.error__notice.active
-  display block
+.error__notice.show 
+  display: block
 
 // Image
 .page__image
