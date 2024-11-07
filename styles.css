@@ -158,10 +158,16 @@ body {
   border-radius: 5rem;
   font-weight: 300;
   font-size: clamp(0.8rem, 1.2vw, 1rem);
+  animation: animate__fadeInBottomLeft;
+  animation-duration: 2s;
+  animation-delay: 2s;
 }
 .form__input::placeholder {
   color: #c2d3ff;
   font-weight: 300;
+}
+.form__input:focus {
+  outline: none;
 }
 .form__button {
   padding: 1rem 1.5rem;
