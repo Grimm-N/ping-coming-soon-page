@@ -99,7 +99,7 @@ body
   justify-content center
   align-items center
   width 100%
-  height auto
+  height: 100%
   
 .page__container
   display flex
@@ -108,8 +108,8 @@ body
   text-align center
   max-width 40rem
   width 100%
-  height auto
-  margin 0 2vw
+  max-height 90%
+  margin 2vw
 
 // Header
 .page__header
@@ -134,7 +134,6 @@ body
   align-items center
   gap calc(0.5em + 0.75vw)
   max-width 35.5rem
-  width 88.75%
   margin-bottom: 2em
 
 .page__title
@@ -167,9 +166,6 @@ body
   border-radius 5rem
   font-weight weight-light
   font-size clamp(0.8rem, 1.2vw, 1rem)
-  animation animate__fadeInBottomLeft
-  animation-duration 2s
-  animation-delay 2s
 
 .form__input::placeholder
   color pale-blue
@@ -210,10 +206,24 @@ body
   opacity 0.7
 
 @-webkit-keyframes shiny-btn1 
-    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+
+// Error
+.error__notice
+  display none
+  position absolute
+  top 100%
+  left 0
+  font-size 0.85rem
+  color red-color
+  padding 0.5rem 1.5rem
+  justify-self flex-start
+
+.error__notice.active
+  display block
 
 // Image
 .page__image

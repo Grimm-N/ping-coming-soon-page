@@ -93,7 +93,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .page__container {
   display: flex;
@@ -102,8 +102,8 @@ body {
   text-align: center;
   max-width: 40rem;
   width: 100%;
-  height: auto;
-  margin: 0 2vw;
+  max-height: 90%;
+  margin: 2vw;
 }
 .page__header {
   display: flex;
@@ -126,7 +126,6 @@ body {
   align-items: center;
   gap: calc(0.5em + 0.75vw);
   max-width: 35.5rem;
-  width: 88.75%;
   margin-bottom: 2em;
 }
 .page__title {
@@ -158,9 +157,6 @@ body {
   border-radius: 5rem;
   font-weight: 300;
   font-size: clamp(0.8rem, 1.2vw, 1rem);
-  animation: animate__fadeInBottomLeft;
-  animation-duration: 2s;
-  animation-delay: 2s;
 }
 .form__input::placeholder {
   color: #c2d3ff;
@@ -216,6 +212,19 @@ body {
     -webkit-transform: scale(50) rotate(45deg);
     opacity: 0;
   }
+}
+.error__notice {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 0.85rem;
+  color: #ff5263;
+  padding: 0.5rem 1.5rem;
+  justify-self: flex-start;
+}
+.error__notice.active {
+  display: block;
 }
 .page__image {
   max-width: 100%;
