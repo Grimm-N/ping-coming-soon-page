@@ -10,6 +10,12 @@
     .form__button {
         flex: 1;
     }
+
+    .error__notice {
+        position: absolute;
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+    }
 }
 
 @media (min-width: 68.75rem) {
