@@ -83,7 +83,7 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   position: relative;
-  background: linear-gradient(-45deg, #206a5d, #81b214, #28b5b5);
+  background: linear-gradient(-45deg, #206a5d, #81b214, #28b5b5, #f58634);
   background-size: 400% 400%;
   animation: bodyGradient 15s ease infinite;
 }
@@ -134,7 +134,7 @@ body {
   color: #fff;
   animation: animate__fadeInDown;
 }
-.page__title span {
+.page__title animation-delay:span {
   font-weight: 700;
   color: #151f29;
 }
@@ -339,46 +339,34 @@ body {
   }
 }
 @-moz-keyframes Wave {
-  0% {
+  0%, 100% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-25%);
-  }
-  100% {
     transform: translateX(-50%);
   }
 }
 @-webkit-keyframes Wave {
-  0% {
+  0%, 100% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-25%);
-  }
-  100% {
     transform: translateX(-50%);
   }
 }
 @-o-keyframes Wave {
-  0% {
+  0%, 100% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-25%);
-  }
-  100% {
     transform: translateX(-50%);
   }
 }
 @keyframes Wave {
-  0% {
+  0%, 100% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-25%);
-  }
-  100% {
     transform: translateX(-50%);
   }
 }
