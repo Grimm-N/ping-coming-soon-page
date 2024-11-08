@@ -1,4 +1,5 @@
-# Frontend Mentor - Ping coming soon page solution
+# Ping coming soon page solution
+![](screenshots/all.png)
 
 
 ## Table of contents
